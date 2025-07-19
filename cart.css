@@ -1,0 +1,24 @@
+body {
+  font-family: 'Playfair Display', serif;
+  background: #fdf2f0;
+  text-align: center;
+  padding: 4rem;
+}
+
+.cart-container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  display: inline-block;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.place-order-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #8b4b4b;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-top: 1rem;
+}

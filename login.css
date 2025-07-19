@@ -1,0 +1,129 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Garamound';
+  background: url('bgimage.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: #5e3b2b;
+  position: relative;
+}
+
+/* Welcome Text Animation */
+.welcome-box {
+  position: absolute;
+  top: 30px;
+  text-align: center;
+  color: #8b4e3d;
+  font-family: 'Great Vibes', cursive;
+  font-size: 26px;
+  width: 100%;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.welcome-box .line {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.7s ease;
+  margin-bottom: 12px;
+  color: #8b4e3d;
+}
+
+/* Login Container */
+.login-container {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  width: 350px;
+  text-align: center;
+  color: #4b2d21;
+  z-index: 1;
+}
+
+.brand {
+  font-size: 36px;
+  font-family: 'Great Vibes',;
+  color: #a6785d;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 16px;
+  margin-bottom: 25px;
+  font-style: italic;
+  color: #6e4c3e;
+}
+
+/* Inputs */
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  background: #f9ece6;
+  color: #402c25;
+  font-family: 'Playfair Display', serif;
+}
+
+.login-container input::placeholder {
+  color: #a07c6a;
+}
+
+/* Button */
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background: #c57b5d;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-container button:hover {
+  background: #a45d43;
+}
+
+/* Register link */
+.login-container .register {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #824737;
+}
+
+.login-container a {
+  color: #6c3e2e;
+  text-decoration: none;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}
+/* Glittering particles background */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}

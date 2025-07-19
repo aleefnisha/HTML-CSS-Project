@@ -1,0 +1,24 @@
+body {
+  font-family: 'Playfair Display', serif;
+  background: #fff9f7;
+  text-align: center;
+  padding: 4rem;
+}
+
+.thankyou-box {
+  background: #fff;
+  padding: 3rem;
+  border-radius: 20px;
+  display: inline-block;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+.back-home {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: #7a4a4a;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+}

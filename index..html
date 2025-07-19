@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kaira Login</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+
+  <!-- Login box is visible from beginning -->
+  <div class="login-container">
+    <h2 class="brand">KAIRA</h2>
+    <p class="tagline">Login to continue</p>
+    <form action="home.html" method="get">
+  <input type="text" placeholder="Username" required>
+  <input type="password" placeholder="Password" required>
+  <button type="submit">Login</button>
+</form>
+
+  </div>
+
+  <!-- Animated welcome lines -->
+  <div class="welcome-box">
+    <p class="line">Hey beautiful ladies,</p>
+    <p class="line">Welcome to the world of Kaira Modesty Wear!</p>
+    <p class="line"></p>
+    <p class="line"> <strong></strong>.</p>
+  </div>
+
+  <script>
+    // Show welcome lines one by one
+    const lines = document.querySelectorAll('.welcome-box .line');
+    lines.forEach((line, i) => {
+      setTimeout(() => {
+        line.style.opacity = 1;
+        line.style.transform = 'translateY(0)';
+      }, i * 1600);
+    });
+  </script>
+  <!-- Glittering Particle Background -->
+<div id="particles-js"></div>
+
+<!-- Include particles.js from CDN -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<!-- Initialize the glitter effect -->
+<script>
+  particlesJS("particles-js", {
+    "particles": {
+      "number": {
+        "value": 60
+      },
+      "color": {
+        "value": "#d4af37"  // Gold color
+      },
+      "shape": {
+        "type": "circle"
+      },
+      "opacity": {
+        "value": 0.4,
+        "random": true
+      },
+      "size": {
+        "value": 2.5,
+        "random": true
+      },
+      "move": {
+        "enable": true,
+        "speed": 0.6,
+        "direction": "none",
+        "random": true,
+        "straight": false,
+        "out_mode": "out"
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": false
+        },
+        "onclick": {
+          "enable": false
+        },
+        "resize": true
+      }
+    },
+    "retina_detect": true
+  });
+</script>
+
+
+</body>
+</html>
